@@ -6,7 +6,7 @@ import {
  } from 'react-router-dom';
 import * as ROUTES from './constants/routes';
 import './App.css';
-import HeaderBar from './components/UI/Header/NewHeader';
+import TopNavBar from './components/UI/Header'
 import Landing from './components/Pages/Landing';
 import Footer from './components/UI/Footer/Footer';
 import Aboutus from './components/Pages/Landing/Aboutus'
@@ -54,7 +54,7 @@ const App = () => {
 
   return (
     <Router>
-    <HeaderBar />
+    <TopNavBar />
     <Switch>
       <Route exact path={ROUTES.LANDING} component={Landing} />
       <Route exact path={ROUTES.ABOUTUS} component={Aboutus} />

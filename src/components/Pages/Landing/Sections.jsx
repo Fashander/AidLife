@@ -6,12 +6,9 @@ import Emergencies from './Emergencies'
 const Sections = () => {
   return (
     <Fragment>
-     
       <About />
-      
       <News/>
       <Emergencies/>
-      
     </Fragment>
   );
 };
