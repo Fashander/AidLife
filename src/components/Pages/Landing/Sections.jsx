@@ -1,16 +1,17 @@
 import React, { Fragment } from 'react';
 import About from './About';
+import News from './News'
 
 
-
-const sections = () => {
+const Sections = () => {
   return (
     <Fragment>
      
       <About />
+      <News/>
       
     </Fragment>
   );
 };
 
-export default sections;
+export default Sections;

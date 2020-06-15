@@ -24,7 +24,7 @@ const App = () => {
   const [exp, setExp] = useState(localStorage.getItem('exp'));
 
   useEffect(() => {
-    document.title = "AidLife Foundation";
+    document.title = " ADL Demo ";
   }, [])
 
   useEffect(() => {
@@ -57,7 +57,7 @@ const App = () => {
     <HeaderBar />
     <Switch>
       <Route exact path={ROUTES.LANDING} component={Landing} />
-      <Route exact path={ROUTES.PROFILE} component={Profile} />
+      
       {/* <Route exact path={ROUTES.SIGN_IN} component={SignInPage} /> */}
     </Switch>
     <Footer />

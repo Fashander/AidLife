@@ -8,7 +8,7 @@ const Landing = () => {
             
             <BillBoard />
             <Sections/>
-            <QuickLinks />
+            
         </div>
     )
 }
