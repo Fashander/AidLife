@@ -2,39 +2,82 @@
   0% {
     top: -170px;
   }
+
   100% {
     top: 0;
   }
 }
+
+@keyframes lowOpacity {
+  0% {
+    opacity: 1;
+    top: 0;
+  }
+
+  30% {
+    opacity: 0.97;
+    top: -50px;
+  }
+
+  100% {
+    opacity: 0.9;
+    top: 0;
+  }
+}
+
+@keyframes wxFadeoff {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
 .header {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 99;
+
   @media (min-width: 768px) {
     position: absolute
   }
+
   .navbar-brand {
     font-weight: bold;
     letter-spacing: 2px;
     color: #4e4e4e;
+
     @media (min-width: 768px) {
       font-size: 1.8rem;
     }
+
     i {
       color: #006758;
       font-size: 0.5rem;
     }
   }
+
+  .visibility {
+    &.scrolled {
+      animation: wxFadeoff 8s ease forwards;
+    }
+  }
+
   .navbar {
     box-shadow: 0px 2px 6px rgba(43, 73, 111, 0.2);
+
     &.scrolled {
       position: fixed;
       left: 0;
-      right: 30%;
-      opacity: 0.9;
-      animation: scrolled 1.9s ease forwards;
+      right: 0;
+      opacity: 0.8;
+      animation: lowOpacity 1.9s ease forwards;
+
+      // animation: scrolled 1.9s ease forwards;
       @media (min-width: 768px) {
         position: fixed;
         left: 0;
@@ -43,24 +86,30 @@
       }
     }
   }
+
   .nav-link {
     text-transform: uppercase;
     font-weight: 700;
-    color: #4e4e4e !important;
+    color: #4e4e4e;
     font-size: 0.85rem;
+
     &:hover {
-      color: darken(#25da01, 6%) !important;
+      color: darken(#25da01, 6%);
     }
+
     &.active {
-      color: lighten(#25da01, 5%) !important;
+      color: lighten(#25da01, 5%);
     }
+
     @media (min-width: 768px) {
       padding: 1rem 1rem;
     }
   }
+
   .top-bar {
     background-color: #39867b;
     display: none;
+
     @media (min-width: 768px) {
       display: block;
     }
@@ -79,6 +128,7 @@
     -o-transition: 0.5s ease-in-out;
     transition: 0.5s ease-in-out;
     cursor: pointer;
+
     span {
       display: block;
       position: absolute;
@@ -96,16 +146,20 @@
       -moz-transition: 0.25s ease-in-out;
       -o-transition: 0.25s ease-in-out;
       transition: 0.25s ease-in-out;
+
       &:nth-child(1) {
         top: 0px;
       }
+
       &:nth-child(2) {
         top: 9px;
       }
+
       &:nth-child(3) {
         top: 18px;
       }
     }
+
     &.open {
       span {
         &:nth-child(1) {
@@ -115,10 +169,12 @@
           -o-transform: rotate(135deg);
           transform: rotate(135deg);
         }
+
         &:nth-child(2) {
           opacity: 0;
           left: -60px;
         }
+
         &:nth-child(3) {
           top: 9px;
           -webkit-transform: rotate(-135deg);

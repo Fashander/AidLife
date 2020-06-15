@@ -100,7 +100,7 @@ const BillBoard = () => {
                     <Typography className={classes.bodyText} align='left' variant='body1' color='textPrimary' component='div' >
                         <div>{tutorialSteps[activeStep].label}</div>
                     </Typography>
-                    <Button variant="contained" color="primary">
+                    <Button href={'https://ravesandbox.flutterwave.com/pay/aidlifefoundation'} variant="contained" color="primary">
                         DONATE
                     </Button>
                 </Paper>
