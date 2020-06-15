@@ -60,7 +60,7 @@ const useStyles = makeStyles((theme) => ({
       fontSize: 14,
       lineHeight: 1.1,
       textAlign:'left',
-      marginLeft: 32,
+      marginLeft: 10,
     },
     Courseheader2:{
         fontWeight: 'bold',

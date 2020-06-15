@@ -3,7 +3,8 @@ import alfLogo from '../../../assets/img/Aidlife.jpg';
 import '../../../App.css';
 import Link from '../Link/Link';
 import { makeStyles } from '@material-ui/core/styles';
-
+import IconButton from '@material-ui/core/IconButton';
+import MenuIcon from '@material-ui/icons/Menu';
 const useStyles = makeStyles((theme) => ({
   navBgColor: {
     backgroundColor: theme.palette.primary.main,
@@ -63,16 +64,17 @@ const Nav = () => {
         <a className='navbar-brand' href='/'>
           <img className='App-logo' src={alfLogo} alt='Logo' />
         </a>
-        <div className={`navbar-toggler nav-icon ${classes.mui_navIcon} ${(() => {
+        <IconButton className={`navbar-toggler nav-icon  ${(() => {
           if (toggeledNav) return 'open';
           return '';
         })}`}
           onClick={toggleNav}
         >
+          <MenuIcon/>
           <span />
           <span />
           <span />
-        </div>
+        </IconButton>
         <div
           className={`collapse navbar-collapse ${(() => {
             if (toggeledNav) return 'show';
