@@ -8,7 +8,6 @@ import * as ROUTES from './constants/routes';
 import './App.css';
 import HeaderBar from './components/UI/Header/NewHeader';
 import Landing from './components/Pages/Landing';
-import Profile from './components/Pages/Profile';
 import Footer from './components/UI/Footer/Footer';
 import Aboutus from './components/Pages/Landing/Aboutus'
 // import { withAuthentication } from './components/Session';
