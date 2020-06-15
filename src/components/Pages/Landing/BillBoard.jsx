@@ -54,16 +54,16 @@ const useStyles = makeStyles((theme) => ({
 
 const tutorialSteps=[
     {
-        label: 'San Francisco – Oakland Bay Bridge, United States',
+        label: 'Giving back to the Community is a mission for everyone',
         imgPath:'https://images.unsplash.com/photo-1537944434965-cf4679d1a598?auto=format&fit=crop&w=400&h=250&q=60',
     },
     {
-        label: 'Bali, Indonesia',
+        label: 'Allevating poverty in Africa',
         imgPath:
           'https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=400&h=250&q=80',
       },
       {
-        label: 'NeONBRAND Digital Marketing, Las Vegas, United States',
+        label: 'Providing means of better education for pupils around Africa',
         imgPath:
           'https://images.unsplash.com/photo-1518732714860-b62714ce0c59?auto=format&fit=crop&w=400&h=250&q=60',
       },

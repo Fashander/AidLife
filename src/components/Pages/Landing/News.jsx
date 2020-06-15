@@ -10,6 +10,7 @@ import Button from "@material-ui/core/Button"
 import Card from "@material-ui/core/Card"
 import Typography from "@material-ui/core/Typography"
 import AcUnitRoundedIcon from '@material-ui/icons/AcUnitRounded';
+import BeenhereIcon from '@material-ui/icons/Beenhere';
 import Avatar from "@material-ui/core/Avatar"
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -84,6 +85,13 @@ const useStyles = makeStyles((theme) => ({
         background: 'transparent'
      },
 
+     avatar:{
+        backgroundImage: `url(${BeenhereIcon})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+     }
+
     
   }));
   
@@ -113,14 +121,13 @@ const News = () => {
                         <CardHeader
                        avatar={
                         <Avatar aria-label="recipe" className={classes.avatar}>
-                        R
+                        
                         </Avatar>
                        }
                        />
                         <CardContent>
                         <Typography variant="body2" color="textSecondary" component="p">
-                            This impressive paella is a perfect party dish and a fun meal to cook together with your
-                            guests. Add 1 cup of frozen peas along with the mussels, if you like.
+                        AidLife Nigeria intervened in Kogi, Niger, Kebbi and Delta states during the epic floods of 2018, bringing laughter to hundreds of lactating mothers, pregnant women, children and PLWDs across the states.
                         </Typography>
                         
                     </CardContent>
@@ -130,15 +137,14 @@ const News = () => {
                         <Card className={classes.grid}>
                         <CardHeader
                        avatar={
-                        <Avatar aria-label="recipe" className={classes.avatar}>
-                        R
+                        <Avatar aria-label="recipe" className={classes.avatar} src={AcUnitRoundedIcon}>
+                        
                         </Avatar>
                        }
                        />
                         <CardContent>
                         <Typography variant="body2" color="textSecondary" component="p">
-                            This impressive paella is a perfect party dish and a fun meal to cook together with your
-                            guests. Add 1 cup of frozen peas along with the mussels, if you like.
+                        AidLife Nigeria’s Project on irregular migration in Borno and Edo states is a 2-year-old project, and it aims at keeping people busy, so that they have no need to migrate.
                         </Typography>
                         
                     </CardContent>
@@ -148,15 +154,14 @@ const News = () => {
                     <Card className={classes.grid}>
                         <CardHeader
                        avatar={
-                        <Avatar aria-label="recipe" className={classes.avatar}>
-                        R
+                        <Avatar aria-label="recipe" className={classes.avatar} src={AcUnitRoundedIcon}>
+                        
                         </Avatar>
                        }
                        />
                         <CardContent>
                         <Typography variant="body2" color="textSecondary" component="p">
-                            This impressive paella is a perfect party dish and a fun meal to cook together with your
-                            guests. Add 1 cup of frozen peas along with the mussels, if you like.
+                        Harmful widowhood practices in Kogi state have been tackled by AidLife Nigeria in Ugbedomagu community in 2016. 
                         </Typography>
                         
                     </CardContent>
@@ -166,8 +171,8 @@ const News = () => {
                     <Card className={classes.grid}>
                         <CardHeader
                        avatar={
-                        <Avatar aria-label="recipe" className={classes.avatar}>
-                        R
+                        <Avatar aria-label="recipe" className={classes.avatar} src={AcUnitRoundedIcon}>
+                        
                         </Avatar>
                        }
                        />

@@ -90,6 +90,16 @@ const useStyles = makeStyles((theme) => ({
      },
      grid:{
         marginLeft: 140
+     },
+     aboutImg:{
+      width: "100%",
+      maxHeight: '300px',
+      overflow: 'hidden',
+     },
+     button:{
+      color: theme.palette.common['white'],
+      backgroundColor: theme.palette.primary['main'],
+      borderColor:theme.palette.primary['dark'],
      }
     
   }));
@@ -128,24 +138,26 @@ const About = () => {
                     
                     <CardContent>
                         <span className={classes.header2}  >
-                                ActionAid is a global movement of people working together
-                                 to further human rights for all and defeat poverty. We 
+                                We are AidLife Foundation.A global movement of people working together
+                                 to further human rights for all and defeat poverty.
+                                 AidLife Foundation is located in Oju, Benue State Nigeria We 
                                  prioritise works with the poor and excluded, promoting
                                   values and commitment in civil society, institutions and
                                    governments with the aim of achieving structural changes 
                                    to eradicate injustices and poverty in the world.
-                                    ActionAid Nigeria is a member of ActionAid global federation.
+                                    AidLife Nigeria is a member of AidLife global federation.
                                      We maintain a strong relationship of interdependence and 
                                      mutual accountability within the international federation
                                       while ensuring a strong balance between self-rule and 
                                       shared-rule. Registered in Nigeria in 1999 as a Country
-                                       Programme of ActionAid International, we have
+                                       Programme of AidLife International, we have
                                         transformed into an autonomous national organisation 
                                         with a strong national governance structure –
                                          a Board and a General Assembly -
                                           consisting of reputable Nigerians providing 
                                           strategic oversight.</span>
-                                          <Button className='btn btn-primary rounded-0'>Read More</Button>
+                                          <p><Button className={classes.button}>Read More</Button>
+                                            </p>
                     </CardContent>
                     
                     </Grid>
@@ -157,10 +169,11 @@ const About = () => {
                                     
                     <CardContent>
                     <span className={classes.header2}  >
-                            ActionAid is a global movement of people working together
+                            AidLife is a global movement of people working together
                              to further human rights for all and defeat poverty.
                              </span>
-                    <Button className='btn btn-primary rounded-0'>Read More</Button>
+                             <p><Button className={classes.button}>Read More</Button>
+                              </p>
                 </CardContent>
                 
                 </Grid>
@@ -173,10 +186,11 @@ const About = () => {
                                     
                     <CardContent>
                     <span className={classes.header2}  >
-                            ActionAid is a global movement of people working together
+                            AidLife is a global movement of people working together
                              to further human rights for all and defeat poverty.
                              </span>
-                    <Button className='btn btn-primary rounded-0'>Read More</Button>
+                             <p><Button className={classes.button}>Read More</Button>
+                              </p>
                 </CardContent>                
                 </Grid>
                 <Grid item xs={12} sm={3} >
@@ -187,10 +201,11 @@ const About = () => {
                                     
                     <CardContent>
                     <span className={classes.header2}  >
-                            ActionAid is a global movement of people working together
+                            AidLife is a global movement of people working together
                              to further human rights for all and defeat poverty.
                              </span>
-                    <Button className='btn btn-primary rounded-0'>Read More</Button>
+                             <p><Button className={classes.button}>Read More</Button>
+                              </p>
                 </CardContent>
                 
                 </Grid>

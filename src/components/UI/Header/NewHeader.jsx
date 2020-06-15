@@ -24,7 +24,7 @@ import Grow from "@material-ui/core/Grow";
 import Paper from "@material-ui/core/Paper";
 import Popper from "@material-ui/core/Popper";
 import MenuList from "@material-ui/core/MenuList";
-
+import './NewHeader.scss'
 const useStyles = makeStyles((theme) => ({
     grow: {
         flexGrow: 1,
@@ -91,6 +91,8 @@ const useStyles = makeStyles((theme) => ({
     logo: {
         maxWidth: 160,
     },
+
+
 }));
 
 export default function MainAppBar(props) {
@@ -193,6 +195,7 @@ export default function MainAppBar(props) {
         </Menu>
     );
 
+      
     const mobileMenuId = 'primary-search-account-menu-mobile';
     const renderMobileMenu = (
         <Menu
@@ -243,11 +246,9 @@ export default function MainAppBar(props) {
                     <div className={classes.sectionDesktop}>
                         
                     <Tabs>
-                            <Tab label="About Us" onClick={handleProfileMenuOpen}> </Tab>
+                            <Tab label="About Us" component={Link} to={ROUTES.ABOUTUS} > </Tab>
                             <Tab label="Covid-19 Hub"> </Tab>
-                            <Tab label="I'm an Individual"> </Tab>
-                            <Tab label="I'm a charity"> </Tab>
-                            <Tab label="I'm a company" > </Tab>
+                            <Tab label="Donate"> </Tab>
                             <Tab
                                 ref={anchorRef}
                                  aria-controls={open ? 'menu-list-grow' : undefined}

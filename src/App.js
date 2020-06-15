@@ -10,6 +10,7 @@ import HeaderBar from './components/UI/Header/NewHeader';
 import Landing from './components/Pages/Landing';
 import Profile from './components/Pages/Profile';
 import Footer from './components/UI/Footer/Footer';
+import Aboutus from './components/Pages/Landing/Aboutus'
 // import { withAuthentication } from './components/Session';
 // import SignInPage, { SignInForm } from './components/Pages/Auth/signIn';
 // import SignOutButton from './components/Pages/Auth/signOut';
@@ -57,7 +58,7 @@ const App = () => {
     <HeaderBar />
     <Switch>
       <Route exact path={ROUTES.LANDING} component={Landing} />
-      
+      <Route exact path={ROUTES.ABOUTUS} component={Aboutus} />
       {/* <Route exact path={ROUTES.SIGN_IN} component={SignInPage} /> */}
     </Switch>
     <Footer />

@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import wxLogo from '../../../assets/img/wxLG.gif';
+import wxLogo from '../../../assets/img/Aidlife.jpg';
 import  '../../../App.css';
 import Link from '../Link/Link';
+import './Nav.scss'
 
 const Nav = () => {
   const [navClass, setNavClass] = useState('');
@@ -69,6 +70,10 @@ const Nav = () => {
               <Link target='contact' classes='nav-link'>
                 <div onClick={toggleNav}> Contact</div>
               </Link>
+              <Link target='contact' classes='nav-link'>
+                <div > Demo</div>
+                <subMenu/>
+              </Link>
             </li>
           </ul>
 
@@ -77,5 +82,20 @@ const Nav = () => {
     </nav>
   );
 };
+const subMenu = () => {
+  return(  <ul className="nav__submenu">
+        <li className="nav__submenu-item ">
+          <a>Our Company</a>
+        </li>
+        <li className="nav__submenu-item ">
+          <a>Our Team</a>
+        </li>
+        <li className="nav__submenu-item ">
+          <a>Our Portfolio</a>
+        </li>
+      </ul>
+  )
+}
+;
 
 export default Nav;

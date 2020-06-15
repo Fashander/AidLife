@@ -107,4 +107,3 @@ const QuickLinkCard = ({payload, classes}) => (
     );
 
 export default QuickLinks
-
