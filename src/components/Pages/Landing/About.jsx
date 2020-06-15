@@ -48,9 +48,10 @@ const useStyles = makeStyles((theme) => ({
     },
     header2:{
       color: '#414141',
-          fontSize: 14,
+          fontSize: 16,
           lineHeight: 1.1,
-          textAlign: 'left',          
+          textAlign: 'center', 
+          Align: 'justify'         
     },
   
     Courseheader:{
@@ -100,6 +101,9 @@ const useStyles = makeStyles((theme) => ({
       color: theme.palette.common['white'],
       backgroundColor: theme.palette.primary['main'],
       borderColor:theme.palette.primary['dark'],
+     },
+     cards:{
+      backgroundColor: theme.palette.common['white'] 
      }
     
   }));
@@ -110,7 +114,7 @@ const About = () => {
     <Section id='about'>
         <div className={classes.root}>
 
-            <Grid container>
+            <Grid container spacing={3}>
             <Grid item xs={12} sm={12} >
                     
                     <p className={classes.Courseheader2}>
@@ -166,7 +170,7 @@ const About = () => {
                     OUR MISSION
                     <div className={classes.Textline}/>
                     </p>
-                                    
+                    <Card elevation={2} className={classes.cards}>
                     <CardContent>
                     <span className={classes.header2}  >
                             AidLife is a global movement of people working together
@@ -175,15 +179,19 @@ const About = () => {
                              <p><Button className={classes.button}>Read More</Button>
                               </p>
                 </CardContent>
+                    </Card>              
+                    
                 
                 </Grid>
 
                 <Grid item xs={12} sm={3} >
+                
                     <p className={classes.Courseheader}>
-                    OUR VISSION
+                    OUR VISION
                     <div className={classes.Textline}/>
                     </p>
-                                    
+                       
+                     <Card elevation={2} className={classes.cards}>           
                     <CardContent>
                     <span className={classes.header2}  >
                             AidLife is a global movement of people working together
@@ -191,15 +199,20 @@ const About = () => {
                              </span>
                              <p><Button className={classes.button}>Read More</Button>
                               </p>
-                </CardContent>                
+                </CardContent> 
+                </Card>                 
                 </Grid>
+
                 <Grid item xs={12} sm={3} >
+                
                     <p className={classes.Courseheader}>
                     What We Do
                     <div className={classes.Textline}/>
                     </p>
-                                    
+                        
+                    <Card elevation={2} className={classes.cards}>           
                     <CardContent>
+
                     <span className={classes.header2}  >
                             AidLife is a global movement of people working together
                              to further human rights for all and defeat poverty.
@@ -207,7 +220,7 @@ const About = () => {
                              <p><Button className={classes.button}>Read More</Button>
                               </p>
                 </CardContent>
-                
+                </Card>
                 </Grid>
             </Grid>
     
