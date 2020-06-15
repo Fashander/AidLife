@@ -3,7 +3,7 @@ import NavBar from '../Nav/Nav';
 
 const TopNavBar = () => {
     return (
-        <div className='Header'>
+        <div className='header'>
             <NavBar />
         </div>
     )

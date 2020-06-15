@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import alfLogo from '../../../assets/img/Aidlife.jpg';
 import '../../../App.css';
-import Link from '../Link/Link';
+import Scroll from '../Link/Link';
+import { Link } from 'react-router-dom';
 import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
@@ -44,6 +45,10 @@ const Nav = () => {
     settoggeledNav(!toggeledNav);
   };
 
+  const openDonate = () => {
+    window.open('https://ravesandbox.flutterwave.com/pay/aidlifefoundation','_self');
+  }
+
   const scrolledFunc = () => {
     let navClass = '';
     if (window.scrollY >= 300) {
@@ -63,10 +68,7 @@ const Nav = () => {
         <a className='navbar-brand' href='/'>
           <img className='App-logo' src={alfLogo} alt='Logo' />
         </a>
-        <div className={`navbar-toggler nav-icon ${classes.mui_navIcon} ${(() => {
-          if (toggeledNav) return 'open';
-          return '';
-        })}`}
+        <div className={`navbar-toggler nav-icon ${classes.mui_navIcon} ${ toggeledNav ? 'open' : ''}`}
           onClick={toggleNav}
         >
           <span />
@@ -81,28 +83,18 @@ const Nav = () => {
         >
           <ul className='navbar-nav ml-auto'>
             <li className='nav-item'>
-              <Link target='home' offset={-120} classes={`nav-link ${classes.mui_navLink}`}>
-                <div onClick={toggleNav}> Home</div>
+              <Link to='/aboutus' offset={-120} classes={`nav-link ${classes.mui_navLink}`}>
+                <div onClick={toggleNav}> About Us</div>
               </Link>
             </li>
             <li className='nav-item'>
-              <Link target='about' classes={`nav-link ${classes.mui_navLink}`}>
-                <div onClick={toggleNav}> About</div>
+              <Link to='#' classes={`nav-link ${classes.mui_navLink}`}>
+                <div onClick={toggleNav}> Covid-19 Hub</div>
               </Link>
             </li>
             <li className='nav-item'>
-              <Link target='services' classes={`nav-link ${classes.mui_navLink}`}>
-                <div onClick={toggleNav}> Services</div>
-              </Link>
-            </li>
-            <li className='nav-item'>
-              <Link target='blog' classes={`nav-link ${classes.mui_navLink}`}>
-                <div onClick={toggleNav}> Blog</div>
-              </Link>
-            </li>
-            <li className='nav-item'>
-              <Link target='contact' classes={`nav-link ${classes.mui_navLink}`}>
-                <div onClick={toggleNav}> Contact</div>
+              <Link onClick={openDonate} classes={`nav-link ${classes.mui_navLink}`}>
+                <div onClick={toggleNav}> Donate</div>
               </Link>
             </li>
           </ul>
