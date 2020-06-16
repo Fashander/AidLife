@@ -23,6 +23,7 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: '100%',
     margin: theme.spacing(4),
     padding: theme.spacing(2),
+    backgroundColor: theme.palette.common.white,
   },
   media: {
     height: 0,
