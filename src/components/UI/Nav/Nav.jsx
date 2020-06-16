@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import alfLogo from '../../../assets/img/Aidlife.jpg';
 import '../../../App.css';
-import Scroll from '../Link/Link';
 import { Link } from 'react-router-dom';
 import { makeStyles } from '@material-ui/core/styles';
-
 const useStyles = makeStyles((theme) => ({
   navBgColor: {
     backgroundColor: theme.palette.primary.main,
@@ -83,17 +81,17 @@ const Nav = () => {
         >
           <ul className='navbar-nav ml-auto'>
             <li className='nav-item'>
-              <Link to='/aboutus' offset={-120} classes={`nav-link ${classes.mui_navLink}`}>
+              <Link to='/aboutus' offset={-120} className={`nav-link ${classes.mui_navLink}`}>
                 <div onClick={toggleNav}> About Us</div>
               </Link>
             </li>
             <li className='nav-item'>
-              <Link to='#' classes={`nav-link ${classes.mui_navLink}`}>
+              <Link to='#' className={`nav-link ${classes.mui_navLink}`}>
                 <div onClick={toggleNav}> Covid-19 Hub</div>
               </Link>
             </li>
             <li className='nav-item'>
-              <Link onClick={openDonate} classes={`nav-link ${classes.mui_navLink}`}>
+              <Link onClick={openDonate} className={`nav-link ${classes.mui_navLink}`}>
                 <div onClick={toggleNav}> Donate</div>
               </Link>
             </li>

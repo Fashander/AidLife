@@ -249,14 +249,7 @@ export default function MainAppBar(props) {
                             <Tab label="About Us" component={Link} to={ROUTES.ABOUTUS} > </Tab>
                             <Tab label="Covid-19 Hub"> </Tab>
                             <Tab label="Donate"> </Tab>
-                            <Tab
-                                ref={anchorRef}
-                                 aria-controls={open ? 'menu-list-grow' : undefined}
-                                aria-haspopup="true"
-                                
-                                label="Toggle Menu"
-                                    >
-                            </Tab>
+                            
                             </Tabs>
                             
                     </div>
