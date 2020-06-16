@@ -12,6 +12,7 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     flexWrap: 'wrap',
     marginBottom: 50,
+    marginTop: '50px',
     '& > *': {
       margin: theme.spacing(1),
       width: theme.spacing(150),
@@ -59,7 +60,7 @@ const Emergencies = () => {
         <Grid container>
         <Grid item xs={12} sm={12} >
             <Typography className={classes.mui_heading} variant='h4' align='center' >
-              ABOUT AID LIFE FOUNDATION
+              ABOUT AID-LIFE FOUNDATION
               <div className={classes.underlineWrapper}>
                 <div className={classes.underlineWrapper_inner}>
                   <span className={classes.underline} ></span>

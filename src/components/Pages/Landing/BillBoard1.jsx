@@ -1,6 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import BillBoardBgImg from '../../../assets/img/imagei.jpg';
+import BillBoardBgImg from '../../../assets/img/rice-donation3.jpg';
 import Typography from '@material-ui/core/Typography';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
@@ -10,7 +10,7 @@ const useStyles = makeStyles((theme) => ({
     root: {
         flexGrow: 1,
         padding: theme.spacing(1, 2, 3),
-        margin: theme.spacing(19, 0, 1),
+        margin: theme.spacing(15, 0, 1),
         [theme.breakpoints.up('sm')]: {
             display: 'block',
             backgroundImage: `url(${BillBoardBgImg})`,

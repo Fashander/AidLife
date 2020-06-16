@@ -96,6 +96,11 @@ const Nav = () => {
               </Link>
             </li>
             <li className='nav-item'>
+              <Link to='#' className={`nav-link ${classes.mui_navLink}`}>
+                <div onClick={toggleNav}>APPLY FOR SCHOLARSHIP/AID</div>
+              </Link>
+            </li>
+            <li className='nav-item'>
               <Link onClick={openDonate} className={`nav-link ${classes.mui_navLink}`}>
                 <div onClick={toggleNav}> Donate</div>
               </Link>
