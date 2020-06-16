@@ -1,10 +1,10 @@
 import React from 'react';
-import BillBoard from './BillBoard';
+import BillBoard1 from './BillBoard1';
 import Sections from './Sections';
 
 const Landing = () => (
     <div>
-        <BillBoard />
+        <BillBoard1 />
         <Sections/>
     </div>
 )

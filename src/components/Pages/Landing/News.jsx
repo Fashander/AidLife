@@ -127,7 +127,8 @@ const News = () => {
                        />
                         <CardContent>
                         <Typography variant="body2" color="textSecondary" component="p">
-                        AidLife Nigeria intervened in Kogi, Niger, Kebbi and Delta states during the epic floods of 2018, bringing laughter to hundreds of lactating mothers, pregnant women, children and PLWDs across the states.
+                                  Aid-life foundation is a non-profit organisation whose primary objectives anchored on providing philanthropic services, community development and social well-being of the vulnerables tailored the promotion of inclusive society.
+                                  Specifically, some of the objectives of the Aid-Life Foundation include but not limited to.
                         </Typography>
                         
                     </CardContent>
@@ -144,7 +145,8 @@ const News = () => {
                        />
                         <CardContent>
                         <Typography variant="body2" color="textSecondary" component="p">
-                        AidLife Nigeria’s Project on irregular migration in Borno and Edo states is a 2-year-old project, and it aims at keeping people busy, so that they have no need to migrate.
+                                  Aid-life foundation is a non-profit organisation whose primary objectives anchored on providing philanthropic services, community development and social well-being of the vulnerables tailored the promotion of inclusive society.
+                                  Specifically, some of the objectives of the Aid-Life Foundation include but not limited to.
                         </Typography>
                         
                     </CardContent>
@@ -161,7 +163,8 @@ const News = () => {
                        />
                         <CardContent>
                         <Typography variant="body2" color="textSecondary" component="p">
-                        Harmful widowhood practices in Kogi state have been tackled by AidLife Nigeria in Ugbedomagu community in 2016. 
+                                  Aid-life foundation is a non-profit organisation whose primary objectives anchored on providing philanthropic services, community development and social well-being of the vulnerables tailored the promotion of inclusive society.
+                                  Specifically, some of the objectives of the Aid-Life Foundation include but not limited to.
                         </Typography>
                         
                     </CardContent>
@@ -178,8 +181,8 @@ const News = () => {
                        />
                         <CardContent>
                         <Typography variant="body2" color="textSecondary" component="p">
-                            This impressive paella is a perfect party dish and a fun meal to cook together with your
-                            guests. Add 1 cup of frozen peas along with the mussels, if you like.
+                                  Aid-life foundation is a non-profit organisation whose primary objectives anchored on providing philanthropic services, community development and social well-being of the vulnerables tailored the promotion of inclusive society.
+                                  Specifically, some of the objectives of the Aid-Life Foundation include but not limited to
                         </Typography>
                         
                     </CardContent>

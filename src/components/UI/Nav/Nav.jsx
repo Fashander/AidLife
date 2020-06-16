@@ -81,13 +81,18 @@ const Nav = () => {
         >
           <ul className='navbar-nav ml-auto'>
             <li className='nav-item'>
-              <Link to='/aboutus' offset={-120} className={`nav-link ${classes.mui_navLink}`}>
+              <Link to='/' className={`nav-link ${classes.mui_navLink}`}>
+                <div onClick={toggleNav}> Home</div>
+              </Link>
+            </li>
+            <li className='nav-item'>
+              <Link to='/aboutus' className={`nav-link ${classes.mui_navLink}`}>
                 <div onClick={toggleNav}> About Us</div>
               </Link>
             </li>
             <li className='nav-item'>
-              <Link to='#' className={`nav-link ${classes.mui_navLink}`}>
-                <div onClick={toggleNav}> Covid-19 Hub</div>
+              <Link to='/founder' className={`nav-link ${classes.mui_navLink}`}>
+                <div onClick={toggleNav}> The Founder</div>
               </Link>
             </li>
             <li className='nav-item'>
