@@ -11,6 +11,7 @@ import Landing from './components/Pages/Landing';
 import Footer from './components/UI/Footer/Footer';
 import Aboutus from './components/Pages/Landing/Aboutus';
 import Founder from './components/Pages/Landing/Founder';
+import DemoOffline from './components/Pages/Offline/DemoOffline';
 
 // const DemoAler = "<div><h2>DEMO SITE</h2><p>This is a demo site created by <strong> Weixel Tech Team</strong> for <br/>College of Education, Oju.</p><p>for full production contact: <a href='tel:+234-803-667-6535'>+234 803 667 6535</a> now!</p></div>";
 const DemoAlert = "DEMO SITE \nHi \nThis is a demo site created by Weixel Tech Team for \nAidLife Foundation.\nfor full production pls contact: +234 803 667 6535 ";
@@ -51,15 +52,16 @@ const App = () => {
 
 
   return (
-    <Router>
-    <TopNavBar />
-    <Switch>
-      <Route exact path={ROUTES.LANDING} component={Landing} />
-      <Route exact path={ROUTES.ABOUTUS} component={Aboutus} />
-      <Route exact path={ROUTES.FOUNDER} component={Founder} />
-    </Switch>
-    <Footer />
-  </Router>
+    <DemoOffline />
+  //   <Router>
+  //   <TopNavBar />
+  //   <Switch>
+  //     <Route exact path={ROUTES.LANDING} component={Landing} />
+  //     <Route exact path={ROUTES.ABOUTUS} component={Aboutus} />
+  //     <Route exact path={ROUTES.FOUNDER} component={Founder} />
+  //   </Switch>
+  //   <Footer />
+  // </Router>
   )
 }
 
